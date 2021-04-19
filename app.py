@@ -29,7 +29,7 @@ def cancer():
         clean_data = [float(i) for i in sample_data]
         
         ex1 = np.array(clean_data).reshape(1,-1)
-        load_model = joblib.load('C:/Users/avisk/OneDrive/Desktop/TEST/data/cancer_model.pkl')
+        load_model = joblib.load('data/cancer_model.pkl')
         prediction = load_model.predict(ex1)
         pred = load_model.predict([clean_data])
         return render_template('cancer.html',pred=pred)
@@ -53,7 +53,7 @@ def dibetes():
         clean_data = [float(i) for i in sample_data]
         
         ex1 = np.array(clean_data).reshape(1,-1)
-        load_model = joblib.load('C:/Users/avisk/OneDrive/Desktop/TEST/data/dibetes_model.pkl')
+        load_model = joblib.load('data/dibetes_model.pkl')
         pred = load_model.predict(ex1)
         return render_template('dibetes.html',pred=pred)
     else:
@@ -80,7 +80,7 @@ def kidney():
         
         print(type(clean_data))
         ex1 = np.array(clean_data).reshape(1,-1)
-        load_model = joblib.load('C:/Users/avisk/OneDrive/Desktop/TEST/data/kidney_model.pkl')
+        load_model = joblib.load('data/kidney_model.pkl')
         prediction = load_model.predict(ex1)
         print(prediction)
         pred = load_model.predict([clean_data])
@@ -105,7 +105,7 @@ def heart():
         
         print(type(clean_data))
         ex1 = np.array(clean_data).reshape(1,-1)
-        load_model = joblib.load('C:/Users/avisk/OneDrive/Desktop/TEST/data/heart_model.pkl')
+        load_model = joblib.load('data/heart_model.pkl')
         prediction = load_model.predict(ex1)
         print(prediction)
         pred = load_model.predict([clean_data])
