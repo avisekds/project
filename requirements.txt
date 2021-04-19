@@ -13,5 +13,4 @@ scikit-image==0.16.2
 scikit-learn==0.23.1
 scipy==1.4.1
 seaborn==0.10.0
-Werkzeug==0.14.1
 xgboost==1.4.0
